@@ -2,12 +2,12 @@
 export default {
   bootstrap: () => import('./main.server.mjs').then(m => m.default),
   inlineCriticalCss: true,
-  baseHref: '/upfilnzoai/',
+  baseHref: '/',
   locale: undefined,
   routes: [
   {
     "renderMode": 2,
-    "route": "/upfilnzoai"
+    "route": "/"
   }
 ],
   entryPointToBrowserMapping: undefined,

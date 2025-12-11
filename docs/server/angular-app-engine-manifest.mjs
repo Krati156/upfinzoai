@@ -1,6 +1,6 @@
 
 export default {
-  basePath: '/upfilnzoai',
+  basePath: '/',
   supportedLocales: {
   "en-US": ""
 },
