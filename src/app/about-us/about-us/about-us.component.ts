@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
+import { AfterContentChecked, AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
 import gsap from "gsap";
 
 @Component({
@@ -7,7 +7,7 @@ import gsap from "gsap";
   templateUrl: './about-us.component.html',
   styleUrl: './about-us.component.scss'
 })
-export class AboutUsComponent implements AfterViewInit{
+export class AboutUsComponent implements AfterContentChecked{
   @ViewChild('carousel') carousel!: ElementRef<HTMLDivElement>;
   @ViewChild('carousel1') carousel1!: ElementRef<HTMLDivElement>;
   @ViewChild('carousel2') carousel2!: ElementRef<HTMLDivElement>;
@@ -63,7 +63,7 @@ export class AboutUsComponent implements AfterViewInit{
     });
   }
   
-  ngAfterViewInit(): void {
+  ngAfterContentChecked(): void {
     const itemElements = Array.from(this.carousel.nativeElement.querySelectorAll('.item'));
     const total = itemElements.length;
     const itemElements1 = Array.from(this.carousel1.nativeElement.querySelectorAll('.item1'));
