@@ -6,16 +6,222 @@
     position: absolute;
 
     .frame {
-        width: 1135px;
-        height: 1440px;
-        top: 190px;
-        left: 298px;
+        width: 1235px;
+        height: 660px;
         opacity: 1;
+        top: 851px;
+        left: 160px;
+        position: absolute;
+
+        .frame1 {
+            width: 338px;
+            height: 116px;
+            opacity: 1;
+            top: 130px;
+            left:90px;
+            position: absolute;
+
+            .text {
+                width: 395px; 
+                height: 52px; 
+                opacity: 1;
+                top: 100px; 
+                left: 10px; 
+                font-family: Poppins;
+                font-weight: 400;
+                font-style: Regular;
+                font-size: 16px;
+                line-height: 26px;
+                letter-spacing: 0%;
+                text-transform: capitalize; color: #C4C4C4;
+                position: absolute;           }
+
+            .text::before {
+                content: "\2022";
+                color: #1FCFF1;
+;
+            }
+        }
+
+        .frame2 {
+            width: 756px;
+            height: 659px;
+            opacity: 1;
+            left: 550px;
+            position: absolute;
+
+            .onboarding-section, .payout-section, .payment-section, .ai-banking-section {
+                width: 385px;
+                height: 362px;
+                opacity: 1;
+                top: 295px;
+                left: 350px;
+                position: relative;
+
+                span {
+                    width: 360px;
+                    height: 120px;
+                    opacity: 1;
+                    top: 75px;
+                    left: 35px;
+                    display: block;
+                    font-family: Poppins;
+                    font-weight: 400;
+                    font-style: Regular;
+                    font-size: 17px;
+                    line-height: 27px;
+                    letter-spacing: 0%;
+                    color: #C4C4C4;
+                    position: absolute;
+                }
+
+                .rectangle {
+                    width: 2px;
+                    height: 33px;
+                    opacity: 1;
+                    top: -32px;
+                    left: 34px;
+                    background: #19FB9B;
+                    position: relative;
+                }
+            }
+
+            .payout-section {
+                width: 348px;
+                height: 335px;
+                opacity: 1;
+                top: -30px;
+                left: -86px;
+
+                span {
+                    width: 268px;
+                    height: 137px;
+                    opacity: 1;
+                    top: 75px;
+                    left: 33px;
+                }
+
+                .rectangle {
+                    background: #9945FF;
+                }
+            }
+
+            .payment-section {
+                width: 338px;
+                height: 335px;
+                opacity: 1;
+                top: -800px;
+
+                span {
+                    width: 262px;
+                    height: 200px;
+                    opacity: 1;
+                    top: 75px;
+                    left: 31;
+
+                }
+
+                .rectangle {
+                    background: #FFD512;
+                }
+            }
+
+            .ai-banking-section {
+                width: 357px;
+                height: 308px;
+                opacity: 1;
+                top: -1058px;
+                left: -86px;
+
+                span {
+                    width: 342px;
+                    height: 110px;
+                    opacity: 1;
+                    top: 80px;
+                    left: 32px;
+
+                }
+                .rectangle {
+                    background: #1FCFF1;
+                }
+                
+            }
+
+            .business-numbers {
+                width: 312px;
+                height: 63px;
+                opacity: 1;
+                top: 235px;
+                position: relative;
+
+                span {
+                    width: 239px;
+                    height: 55px;
+                    opacity: 1;
+                    top: 35px;
+                    font-family: Poppins;
+                    font-weight: 400;
+                    font-style: Regular;
+                    font-size: 16px;
+                    line-height: 27px;
+                    letter-spacing: 0%;
+                    text-transform: uppercase;
+                    color: #C4C4C4;
+                }
+
+                .number {
+                    width: 203px;
+                    height: 28px;
+                    opacity: 1;
+                    top: -4px;
+                    font-size: 26px;
+
+                }
+                .number::before {
+                    content: "\2022";
+                    color: #1FCFF1;
+                }
+
+                .percent {
+                    width: 76px;
+                    height: 28;
+                    opacity: 1;
+                    top: -4px;
+                    font-size: 26px;
+
+                }
+            }
+
+            .section-heading {
+                width: 312px;
+                height: 33px;
+                opacity: 1;
+                top: 32px;
+                left: 36px;
+                position: absolute;
+
+                span {
+                    width: 360px;
+                    height: 34px;
+                    opacity: 1;
+                    top: -1px;
+                    left: 19px;
+                    font-family: Poppins;
+                    font-weight: 400;
+                    font-style: Regular;
+                    font-size: 28px;
+                    line-height: 33px;
+                    letter-spacing: 0%;
+                    color: #FFFFFF;
+
+                }
+            }
+        }
     }
 
     .frame-image {
         width: auto;
-        height: 923px;
+        height: 970px;
         left: 298px;
         opacity: 1;
         background-image: url("../../assets/images/frame-section-image.jpg");
@@ -37,7 +243,7 @@
             position: absolute;
             left: 286px;
         }
-        .spiral-line {
+        .spiral {
             width: 590px;
             height: 590px;
             top: 136px;

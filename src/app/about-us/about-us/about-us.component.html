@@ -1,0 +1,64 @@
+<div>
+    <div class="main-container">
+        <div >
+            <label class="title">Why <span>UzOFin?</span></label>
+            <span class="sub-text">Discover endless creativity with PromptVerse. Generate diverse content effortlessly using prompts. Stay updated with real-time trends, automate tasks, and extract insights from any document or URL. All within a sleek, futuristic design. Create more, effortlessly.</span>
+        </div>
+        <div>
+            <div class="carousel"  #carousel>
+                @for (item of imageList1; track $index) {
+                    <div class="item">
+                        <img src={{item}}/>
+                    </div>
+                }
+            </div>
+            <div class="carousel carousel1"  #carousel1>
+                @for (item of imageList2; track $index) {
+                    <div class="item item1">
+                        <img src={{item}}/>
+                    </div>
+                }
+            </div>
+            <div class="carousel carousel2"  #carousel2>
+                @for (item of imageList3; track $index) {
+                    <div class="item item2">
+                        <img src={{item}}/>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+
+    <div class="main-container" style="top: 3130px; background-image: url('assets/images/start_building.png'); height: 600px; background-repeat: no-repeat;">
+        <div>
+            <label class="title">Build Faster with Our <span>API’s</span></label>
+            <span class="sub-text">Plug into secure, developer-friendly financial API’s and launch in days, not months</span>
+        </div>
+        <button class="start-building" style="top: 70px;position: relative;"  (mouseenter)="onMouseEnterButton($event)" (mouseleave)="onMouseLeaveButton($event)">
+            <div class="button-text">Start building</div>
+            <img class="right-arrow" />
+        </button>
+        <!-- <img  src="assets/images/start_building.png"/> -->
+    </div>
+
+    <div class="main-container" style="top: 3730px; background-image: url('assets/images/Gradient_BG_move.png');">
+        <div class="super-text">24/7 support</div>
+        <div class="title">Industry <span>Standard</span></div>
+    </div>
+
+     <div class="main-container" style="top: 4040px;">
+        <div class="title" style="width: 962px; left: 250px; top: 70px;">The future of your industry <span>starts here</span></div>
+        <img class="future-image" src="assets/images/futre_image.jpg"/>
+
+        <div class="action-buttons">
+            <button class="start-building">
+                <div class="button-text">Book a demo</div>
+                <img class="right-arrow" />
+            </button>
+            <button class="read-docs">
+                <div class="button-text">Build AI</div>
+                <img class="right-arrow" />
+            </button>
+        </div>
+    </div>
+</div>

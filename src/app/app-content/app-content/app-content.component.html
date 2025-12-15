@@ -8,7 +8,7 @@
         </div>
     </div>
     <div class="action-buttons">
-        <button class="start-building">
+        <button class="start-building" (mouseenter)="onMouseEnterButton($event)" (mouseleave)="onMouseLeaveButton($event)">
             <div class="button-text">Start building</div>
             <img class="right-arrow" />
         </button>
@@ -17,5 +17,4 @@
             <img class="right-arrow" />
         </button>
     </div>
-    
 </div>

@@ -1,15 +1,9 @@
 .container {
-  min-height: 80vh;
-  
   background-color: black;
   margin: -8px;
-  position: absolute;
-  top:0px;
-  left:0px;
-  right:0px;
 }
 
 .img-background {
   background: url('../assets/images/Frame L.png') left center no-repeat, url('../assets/images/Frame R.png') right center no-repeat;
-  background-size: 42% 100%, 34% 100%;
+  background-size: 46% 120%, 47% 120%;
 }
