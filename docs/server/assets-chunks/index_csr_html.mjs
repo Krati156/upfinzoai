@@ -9,6 +9,6 @@ export default `<!doctype html>
 <style>@font-face{font-family:Poppins;src:url("./media/Poppins-Medium-UUWQX4EV.ttf") format("truetype");font-weight:400;font-style:normal}body{margin:0;font-family:Poppins;color:#fff;box-shadow:0 4px 4px #00000040;background:#030303}</style><link rel="stylesheet" href="styles-4VJCOZCD.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles-4VJCOZCD.css"></noscript></head>
 <body ngcm="">
   <app-root></app-root>
-<script src="polyfills-B6TNHZQ6.js" type="module"></script><script src="main-2DN76WHM.js" type="module"></script></body>
+<script src="polyfills-B6TNHZQ6.js" type="module"></script><script src="main-TGDCD232.js" type="module"></script></body>
 </html>
 `;

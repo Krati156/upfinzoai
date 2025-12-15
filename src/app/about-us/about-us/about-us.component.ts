@@ -1,4 +1,5 @@
-import { AfterContentChecked, AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
+import { AfterContentChecked, Component, ElementRef, Inject, PLATFORM_ID, ViewChild } from '@angular/core';
 import gsap from "gsap";
 
 @Component({
@@ -41,6 +42,8 @@ export class AboutUsComponent implements AfterContentChecked{
     "assets/images/Frame_25.png",
   ];
 
+  // constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
+
   onMouseEnterButton(event: MouseEvent) {
     const button = event?.target as HTMLElement;
     gsap.to(button, { 
@@ -64,15 +67,18 @@ export class AboutUsComponent implements AfterContentChecked{
   }
   
   ngAfterContentChecked(): void {
+    // if (!isPlatformBrowser(this.platformId)) {
+    //   return;
+    // }
+    // gsap.registerPlugin();
     const itemElements = Array.from(this.carousel.nativeElement.querySelectorAll('.item'));
     const total = itemElements.length;
     const itemElements1 = Array.from(this.carousel1.nativeElement.querySelectorAll('.item1'));
     const total1 = itemElements1.length;
     const itemElements2 = Array.from(this.carousel2.nativeElement.querySelectorAll('.item2'));
     const total2 = itemElements2.length;
-    // gsap.registerPlugin();
 
-    gsap.to(itemElements, {
+     gsap.to(itemElements, {
       xPercent: -100 * total,
       duration: 3,
       ease: "none",

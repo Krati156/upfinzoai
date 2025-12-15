@@ -19,7 +19,7 @@ export class BusinessSectionComponent implements AfterViewInit{
   ];
  
   ngAfterViewInit(): void {
-     gsap.to(this.spiral, {
+     gsap.to(this.spiral.nativeElement, {
       rotation: 360,       // full spin
       scale: 1,          // grow bigger
       duration: 10,
